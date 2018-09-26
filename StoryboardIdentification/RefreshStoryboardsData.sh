@@ -5,7 +5,7 @@
 
 
 swift_code() {
-cat "FilmFest/UpdateConstants.swift";
+cat "UpdateConstants.swift";
 
 cat<<EOF
 StoryboardIdentifiers.updateStoryboarIDs(srcRoot: "${SRCROOT}")
