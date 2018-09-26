@@ -5,7 +5,7 @@
 
 
 swift_code() {
-cat "StoryboardIdentification/UpdateConstants.swift";
+cat "${PODS_ROOT}/StoryboardIdentification/StoryboardIdentification/StoryboardIdentifiers.swift";
 
 cat<<EOF
 StoryboardIdentifiers.updateStoryboarIDs(srcRoot: "${SRCROOT}")
