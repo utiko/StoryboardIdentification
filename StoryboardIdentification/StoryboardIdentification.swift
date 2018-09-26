@@ -35,7 +35,7 @@ public extension ViewControllerInstantiatable {
 }
 
 public struct StoryboardIdentification {
-    private let identifier: ViewControllerInstantiatable
+    fileprivate let identifier: ViewControllerInstantiatable
     
     public init(identifier: ViewControllerInstantiatable) {
         self.identifier = identifier
