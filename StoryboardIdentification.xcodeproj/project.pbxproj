@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3D3FC4F2215B7F8900A1FC69 /* StoryboardIdentification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3FC4F0215B7F8900A1FC69 /* StoryboardIdentification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D3FC4F9215B807E00A1FC69 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FC4F8215B807E00A1FC69 /* StoryboardIdentifiers.swift */; };
-		3D3FC4FB215B82C400A1FC69 /* RefreshStoryboardsData.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FC4FA215B82C400A1FC69 /* RefreshStoryboardsData.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3FC4FB215B82C400A1FC69 /* RefreshStoryboardsData.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
