@@ -58,7 +58,7 @@ class StoryboardIdentifiers {
                 storyboardsExtension.append("\n        var storyboardName: String { return \"\(realName)\" }\n")
                 
                 
-                identificationExtension.append("\n    static func \(camelcasedName)(_ identifier: UIStoryboard.\(fullName)) -> StoryboardIdentification { return StoryboardIdentification(identifier: identifier) }")
+                identificationExtension.append("\n    static func \(camelcasedName)(_ identifier: UIStoryboard.\(fullName)) -> StoryboardIdentification { return StoryboardIdentification(identifier: identifier) }\n")
                 
                 if parserHandler.containsInitialViewController {
                     storyboardsExtension.append("\n        case initial")
@@ -70,7 +70,7 @@ class StoryboardIdentifiers {
                 })
                 
                 
-                storyboardsExtension.append("\n    }")
+                storyboardsExtension.append("\n    }\n")
                 
             }
             
