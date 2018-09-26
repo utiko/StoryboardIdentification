@@ -3,7 +3,7 @@
 Tool which allows you easy instaniate View Controllers from storyboards with autocomplete. 
 Forget about copy-pasting Storyboard IDs, and keeping them up to date in your code.
 
-![](assets/sample.png
+![](assets/sample.png)
 
 ## Installation
 
