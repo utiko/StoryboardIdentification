@@ -39,7 +39,7 @@ Simple create/modify existing storyboards and specify storyboard IDs for View Co
 Build project.
 
 Now you can instantiacte any view controller in next way:
-```
+```swift
 let vc = ViewControllerClass.instantiate(from: .storyboardNameStoryboard(.viewControllerID))
 ```
 
@@ -49,14 +49,14 @@ Add new View Controller, you can specify custom class for example **SignUpViewCo
 Specify storyboard ID: **SignUpViewControllerID**.
 
 Now you can simple call:
-```
+```swift
 let vc = SignUpViewController.instantiate(from: .onboardingStoryboard(.signUpViewControllerID))
 ```
 
 If storyboard contains initial view controller, it will be automatically mapped into .initial.
 
 So you can access it by
-```
+```swift
 let vc = OnboardingStartViewController.instantiate(from: .onboardingStoryboard(.initial))
 ```
 
