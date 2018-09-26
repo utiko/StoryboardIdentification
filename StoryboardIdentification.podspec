@@ -94,14 +94,14 @@ Pod::Spec.new do |s|
   s.source_files  = "StoryboardIdentification", "StoryboardIdentification/**/*"
   # s.exclude_files = "Classes/Exclude"
 
-  s.prepare_command = <<-CMD
-	path_to_project = "${SOURCE_ROOT}/${PROJECT_NAME}.xcodeproj"
-	project = Xcodeproj::Project.open(path_to_project)
-	main_target = project.targets.first
-	phase = main_target.new_shell_script_build_phase("Refresh Storyboards Data")
-	phase.shell_script = "${PODS_ROOT}/StoryboardIdentification/RefreshStoryboardsData.sh"
-	project.save()  
-	CMD
+ #  s.prepare_command = <<-CMD
+	# path_to_project = "${SOURCE_ROOT}/${PROJECT_NAME}.xcodeproj"
+	# project = Xcodeproj::Project.open(path_to_project)
+	# main_target = project.targets.first
+	# phase = main_target.new_shell_script_build_phase("Refresh Storyboards Data")
+	# phase.shell_script = "${PODS_ROOT}/StoryboardIdentification/RefreshStoryboardsData.sh"
+	# project.save()  
+	# CMD
 
   # s.public_header_files = "Classes/**/*.h"
 
