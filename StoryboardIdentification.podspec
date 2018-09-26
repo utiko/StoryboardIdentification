@@ -95,7 +95,6 @@ Pod::Spec.new do |s|
   # s.exclude_files = "Classes/Exclude"
 
   s.prepare_command = <<-CMD
-	require 'xcodeproj'
 	path_to_project = "${SOURCE_ROOT}/${PROJECT_NAME}.xcodeproj"
 	project = Xcodeproj::Project.open(path_to_project)
 	main_target = project.targets.first
