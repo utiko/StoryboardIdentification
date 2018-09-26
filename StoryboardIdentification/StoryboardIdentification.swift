@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-protocol ViewControllerInstantiatable {
+public protocol ViewControllerInstantiatable {
     var storyboardName: String { get }
     var rawValue: String { get }
     init?(rawValue: String)
 }
 
-extension ViewControllerInstantiatable {
-    var storyboardID: String { return rawValue }
+public extension ViewControllerInstantiatable {
+    public var storyboardID: String { return rawValue }
     
     func instantiate() -> UIViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
@@ -34,11 +34,11 @@ extension ViewControllerInstantiatable {
     }
 }
 
-struct StoryboardIdentification {
+public struct StoryboardIdentification {
     private let identifier: ViewControllerInstantiatable
 }
 
-extension StoryboardIdentification {
+public extension StoryboardIdentification {
     public func instantiate<T: UIViewController>() -> T {
         
         guard let vc = identifier.instantiate() as? T else {
