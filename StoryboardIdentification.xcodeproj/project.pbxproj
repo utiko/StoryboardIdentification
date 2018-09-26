@@ -34,6 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				3D3FC4EF215B7F8900A1FC69 /* StoryboardIdentification */,
+				3D3FC4FA215B82C400A1FC69 /* RefreshStoryboardsData.sh */,
 				3D3FC4EE215B7F8900A1FC69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +52,6 @@
 			children = (
 				3D3FC4F0215B7F8900A1FC69 /* StoryboardIdentification.h */,
 				3D3FC4F8215B807E00A1FC69 /* StoryboardIdentifiers.swift */,
-				3D3FC4FA215B82C400A1FC69 /* RefreshStoryboardsData.sh */,
 				3D3FC4F1215B7F8900A1FC69 /* StoryboardIdentification-Info.plist */,
 			);
 			path = StoryboardIdentification;
