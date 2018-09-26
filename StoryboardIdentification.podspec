@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "StoryboardIdentification"
   s.version      = "0.1"
-  s.summary      = "Tool which allows you easy acceess your storyboards and instaniate view controllers by autoupdated constants"
+  s.summary      = "Easy access ViewControllers on your storyboards"
 
   s.description  = <<-DESC
   Tool which allows you easy acceess your storyboards and instaniate view controllers by autoupdated constants
@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
-  s.license      = "MIT"
+  #s.license      = "MIT"
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -29,6 +30,7 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   s.platform     = :ios, "9.0"
+  s.swift_version = "4.2"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
