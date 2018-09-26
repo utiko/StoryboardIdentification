@@ -15,7 +15,7 @@
 /* Begin PBXFileReference section */
 		3D3FC4ED215B7F8900A1FC69 /* StoryboardIdentification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoryboardIdentification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3FC4F0215B7F8900A1FC69 /* StoryboardIdentification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardIdentification.h; sourceTree = "<group>"; };
-		3D3FC4F1215B7F8900A1FC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3FC4F1215B7F8900A1FC69 /* StoryboardIdentification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardIdentification-Info.plist"; sourceTree = "<group>"; };
 		3D3FC4F8215B807E00A1FC69 /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		3D3FC4FA215B82C400A1FC69 /* RefreshStoryboardsData.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RefreshStoryboardsData.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 				3D3FC4F0215B7F8900A1FC69 /* StoryboardIdentification.h */,
 				3D3FC4F8215B807E00A1FC69 /* StoryboardIdentifiers.swift */,
 				3D3FC4FA215B82C400A1FC69 /* RefreshStoryboardsData.sh */,
-				3D3FC4F1215B7F8900A1FC69 /* Info.plist */,
+				3D3FC4F1215B7F8900A1FC69 /* StoryboardIdentification-Info.plist */,
 			);
 			path = StoryboardIdentification;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StoryboardIdentification/Info.plist;
+				INFOPLIST_FILE = "StoryboardIdentification/StoryboardIdentification-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +305,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StoryboardIdentification/Info.plist;
+				INFOPLIST_FILE = "StoryboardIdentification/StoryboardIdentification-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
