@@ -53,7 +53,7 @@ class StoryboardIdentifiers {
             parser.delegate = parserHandler
             parser.parse()
             
-            if parserHandler.identifiers.count > 0 {
+            if parserHandler.identifiers.count > 0 || parserHandler.containsInitialViewController {
                 storyboardsExtension.append("\n    enum \(fullName): String, ViewControllerInstantiatable {")
                 storyboardsExtension.append("\n        var storyboardName: String { return \"\(realName)\" }\n")
                 
@@ -99,7 +99,7 @@ class StoryboardIdentifiers {
         let fileManager = FileManager.default
         let enumerator = fileManager.enumerator(atPath: path)
         while let element = enumerator?.nextObject() as? String {
-            if element.contains("UIStoryboard+Identifiers.swift") {
+            if element.contains("StoryboardIdentifiersUtils.swift") {
                 let url = URL(fileURLWithPath: element)
                 return url
             }

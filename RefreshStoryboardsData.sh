@@ -12,4 +12,5 @@ StoryboardIdentifiers.updateStoryboarIDs(srcRoot: "${SRCROOT}")
 EOF
 }
 
-echo "$(swift_code)" | DEVELOPER_DIR="$DEVELOPER_DIR" xcrun --sdk macosx "$TOOLCHAIN_DIR/usr/bin/"swift > "output.log"
+echo "$(swift_code)" | DEVELOPER_DIR="$DEVELOPER_DIR" xcrun --sdk macosx "$TOOLCHAIN_DIR/usr/bin/"swift
+# > "output.log"
