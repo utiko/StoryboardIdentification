@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   Tool which allows you easy acceess your storyboards and instaniate view controllers by autoupdated constants
                    DESC
 
-  s.homepage     = "http://EXAMPLE/StoryboardIdentification"
+  s.homepage     = "https://github.com/utiko/StoryboardIdentification"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "kostia.kolesnyk" => "tiko@utiko.net" }
+  s.author             = { "uTiko" => "tiko@utiko.net" }
   # Or just: s.author    = "kostia.kolesnyk"
   # s.authors            = { "kostia.kolesnyk" => "kostia.kolesnyk@dtm.io" }
   # s.social_media_url   = "http://twitter.com/kostia.kolesnyk"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/StoryboardIdentification.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/utiko/StoryboardIdentification.git", :tag => "#{0.1}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,18 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "StoryboardIdentification", "StoryboardIdentification/**/*"
+  # s.exclude_files = "Classes/Exclude"
+
+  s.prepare_command = <<-CMD
+	require 'xcodeproj'
+	path_to_project = "${SOURCE_ROOT}/${PROJECT_NAME}.xcodeproj"
+	project = Xcodeproj::Project.open(path_to_project)
+	main_target = project.targets.first
+	phase = main_target.new_shell_script_build_phase("Refresh Storyboards Data")
+	phase.shell_script = "${PODS_ROOT}/StoryboardIdentification/RefreshStoryboardsData.sh"
+	project.save()  
+	CMD
 
   # s.public_header_files = "Classes/**/*.h"
 
