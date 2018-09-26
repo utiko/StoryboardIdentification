@@ -2,6 +2,7 @@
 
 Tool which allows you easy instaniate View Controllers from storyboards with autocomplete. 
 Forget about copy-pasting Storyboard IDs, and keeping them up to date in your code.
+Autocomplete will show you only view controllers available by ID on specified storyboard.
 
 ![](assets/example.png)
 
