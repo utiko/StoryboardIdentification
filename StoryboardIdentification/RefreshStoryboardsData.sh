@@ -1,0 +1,15 @@
+#!/bin/bash
+#SRCROOT="${SRCROOT}"
+
+#some = $(<"FilmFest/UpdateConstants.swift")
+
+
+swift_code() {
+cat "FilmFest/UpdateConstants.swift";
+
+cat<<EOF
+StoryboardIdentifiers.updateStoryboarIDs(srcRoot: "${SRCROOT}")
+EOF
+}
+
+echo "$(swift_code)" | DEVELOPER_DIR="$DEVELOPER_DIR" xcrun --sdk macosx "$TOOLCHAIN_DIR/usr/bin/"swift > "output.log"
