@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "StoryboardIdentification"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "Easy access ViewControllers on your storyboards"
 
   s.description  = <<-DESC
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   # s.tvos.deployment_target = "9.0"
 
 
-  s.source       = { :git => "https://github.com/utiko/StoryboardIdentification.git", :tag => "#{0.1}" }
+  s.source       = { :git => "https://github.com/utiko/StoryboardIdentification.git", :tag => "0.1.1" }
   s.source_files  = "StoryboardIdentification", "StoryboardIdentification/**/*"
   # s.exclude_files = "Classes/Exclude"
 

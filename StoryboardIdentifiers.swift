@@ -70,7 +70,7 @@ class StoryboardIdentifiers {
                 })
                 
                 
-                storyboardsExtension.append("\n    }\n")
+                storyboardsExtension.append("\n    }\n    ")
                 
             }
             
@@ -134,6 +134,7 @@ extension UIStoryboard {
 extension StoryboardIdentification {
     \(storyboardIdentificationExtension)
 }
+
 """
         return swiftCode
     }
