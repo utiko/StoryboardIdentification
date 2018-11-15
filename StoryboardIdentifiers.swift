@@ -134,7 +134,6 @@ extension UIStoryboard {
 extension StoryboardIdentification {
     \(storyboardIdentificationExtension)
 }
-        
 """
         return swiftCode
     }
